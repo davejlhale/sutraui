@@ -77,7 +77,7 @@ export const Navbar = () => {
         <NavbarMenu>
           {searchInput}
           <div className="mx-4 mt-2 flex flex-col gap-2">
-            {siteConfig.navMenuItems.map((item, index) => (
+            {siteConfig.navItems.map((item, index) => (
               <NavbarMenuItem key={`${item}-${index}`}>
                 <Link color={index === 2 ? "primary" : index === siteConfig.navMenuItems.length - 1 ? "danger" : "foreground"} href="#" size="lg">
                   {item.label}
@@ -89,7 +89,7 @@ export const Navbar = () => {
       </NextUINavbar>
 
       {/* row2 */}
-      <NextUINavbar maxWidth="xl" position="sticky">
+      <NextUINavbar className="border-b-1 p-0 m-0 max-h-12 " maxWidth="xl" position="sticky">
         <NavbarContent className=" flex basis-full" justify="center">
           {/* donate button */}
           <NavbarItem>
@@ -99,7 +99,7 @@ export const Navbar = () => {
           </NavbarItem>
 
           {/* social media */}
-          <NavbarItem className="flex gap-2   dark:bg-default-100 text-center p-1 pl-2 pr-2 rounded-xl ">
+          <NavbarItem className="flex gap-2   dark:bg-default-100 text-center   px-2 py-2 rounded-xl ">
             <Link isExternal href={siteConfig.sutranovumLinks.twitter} aria-label="Twitter" className="p-1 ">
               <TwitterIcon className="text-default-500" />
             </Link>
