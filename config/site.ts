@@ -4,25 +4,51 @@ export const siteConfig = {
   name: "Next.js + NextUI",
   description: "Make beautiful websites regardless of your design experience.",
   navItems: [
-    {
-      label: "Home",
-      href: "/",
-    },
-    {
-      label: "Docs",
-      href: "/docs",
-    },
-    {
-      label: "Pricing",
-      href: "/pricing",
-    },
-    {
-      label: "Blog",
-      href: "/blog",
-    },
+    // {
+    //   label: "Home",
+    //   href: "/",
+    // },
     {
       label: "About",
       href: "/about",
+      dropdown: [
+        {
+          label: "Bio",
+          href: "/bio",
+        },
+        {
+          label: "Sutranovum Institute",
+          href: "/sutranovumInstitute",
+        },
+        {
+          label: "Coaching and Therapy",
+          href: "/coachingAndTherapy",
+        },
+        {
+          label: "Podcasts",
+          href: "/Podcasts",
+        },
+        {
+          label: "Pubic speaking- Retreats",
+          href: "/PubicSpeakingRetreats",
+        },
+      ],
+    },
+    {
+      label: "Bodisutra",
+      href: "/bodisutra",
+    },
+    {
+      label: "Shop",
+      href: "/shop",
+    },
+    {
+      label: "Licensing",
+      href: "/licensing",
+    },
+    {
+      label: "The Course in Miracles",
+      href: "/theCourseInMiracles ",
     },
   ],
   navMenuItems: [
@@ -64,6 +90,11 @@ export const siteConfig = {
     twitter: "https://twitter.com/getnextui",
     docs: "https://nextui.org",
     discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev",
+    goFundMe: "https://gofund.me/a6c3c8a3",
+  },
+  sutranovumLinks: {
+    youtube: "https://www.youtube.com/@sutranovumchannel",
+    twitter: "https://twitter.com/sutranovum",
+    instagram: "https://www.instagram.com/sutranovum/",
   },
 };
