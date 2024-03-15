@@ -1,13 +1,9 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + NextUI",
-  description: "Make beautiful websites regardless of your design experience.",
+  name: "Sutranovum",
+  description: "Transforming human possibilities through the power of story.",
   navItems: [
-    // {
-    //   label: "Home",
-    //   href: "/",
-    // },
     {
       label: "About",
       href: "/about",
