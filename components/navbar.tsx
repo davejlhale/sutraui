@@ -99,7 +99,7 @@ export const Navbar = () => {
           </NavbarItem>
 
           {/* social media */}
-          <NavbarItem className="flex gap-2  bg-slate-50 text-center  ">
+          <NavbarItem className="flex gap-2   dark:bg-default-100 text-center p-1 pl-2 pr-2 rounded-xl ">
             <Link isExternal href={siteConfig.sutranovumLinks.twitter} aria-label="Twitter" className="p-1 ">
               <TwitterIcon className="text-default-500" />
             </Link>
